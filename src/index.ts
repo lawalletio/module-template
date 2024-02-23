@@ -1,10 +1,10 @@
-import { Module, DefaultContext, getWriteNDK, OutboxService, requiredEnvVar } from '@lawallet/module';
+import { Module, DefaultContext, getWriteNDK, DirectOutbox, requiredEnvVar } from '@lawallet/module';
 import { PrismaClient } from '@prisma/client';
 
 type Context = DefaultContext & {prisma: PrismaClient};
 
 const context: Context = {
-  outbox: new OutboxService(getWriteNDK()),
+  outbox: new DirectOutbox(getWriteNDK()),
   prisma: new PrismaClient(),
 };
 
@@ -15,4 +15,4 @@ const module = Module.build<Context>({
     restPath: `${import.meta.dirname}/rest`,
 });
 
-module.start();
+void module.start();

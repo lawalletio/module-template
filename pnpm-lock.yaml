@@ -9,8 +9,8 @@ overrides:
 
 dependencies:
   '@lawallet/module':
-    specifier: ~0.1.1
-    version: 0.1.1(prisma@5.9.1)(typescript@5.3.3)
+    specifier: ~0.2.0
+    version: 0.2.0(typescript@5.3.3)
   '@nostr-dev-kit/ndk':
     specifier: ^2.4.0
     version: 2.4.2(typescript@5.3.3)
@@ -1021,13 +1021,11 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@lawallet/module@0.1.1(prisma@5.9.1)(typescript@5.3.3):
-    resolution: {integrity: sha512-GFtkYWdbRtg8Vjg7kLCNEVzfYG6vEwsM3cbefTJe5T4vTKF7YZN8IFdFAClN6PJe2zT3IQ26DOiClKEzXdis2w==}
+  /@lawallet/module@0.2.0(typescript@5.3.3):
+    resolution: {integrity: sha512-poSq8Y0Pvr+zGF7IyCwQ+euG9Ao9PGiz0IHiTx7zhp4wfFlxpYiBC36wEbrxYcrZkGrPbC2ZxZr8TdhyShr3fA==}
     engines: {node: '>=20.11.0'}
-    requiresBuild: true
     dependencies:
       '@nostr-dev-kit/ndk': 2.4.2(typescript@5.3.3)
-      '@prisma/client': 5.9.1(prisma@5.9.1)
       '@types/cors': 2.8.17
       '@types/morgan': 1.9.9
       cors: 2.8.5
@@ -1044,7 +1042,6 @@ packages:
       ws: 8.16.0
     transitivePeerDependencies:
       - bufferutil
-      - prisma
       - supports-color
       - typescript
       - utf-8-validate
