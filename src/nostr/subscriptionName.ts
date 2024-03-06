@@ -13,9 +13,11 @@ const filter: NDKFilter = {
   // limit: null,
 };
 
-function getHandler<Context extends DefaultContext = DefaultContext>(ctx: Context): EventHandler {
+function getHandler<Context extends DefaultContext = DefaultContext>(
+  ctx: Context,
+): EventHandler {
   return async (event: NostrEvent): Promise<void> => {
-    console.log(event);
+    await ctx.outbox.publish(event);
   };
 }
 

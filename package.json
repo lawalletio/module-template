@@ -1,6 +1,6 @@
 {
   "name": "module",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "LaWallet Module",
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
@@ -38,7 +38,7 @@
   },
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@lawallet/module": "~0.2.0",
+    "@lawallet/module": "~0.4.0",
     "@nostr-dev-kit/ndk": "^2.4.0",
     "@prisma/client": "5.9.1",
     "debug": "^4.3.4",
