@@ -3,7 +3,7 @@
   "include": [
     "./tests/**/*",
     "./src/**/*",
-    "./build.js",
+    "./build.mjs",
     "./jest.config.js"
   ]
 }
