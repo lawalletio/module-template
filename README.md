@@ -1,4 +1,18 @@
-# La Wallet Module
+# La Wallet Module Template
+
+## Usage
+
+Use this as a template from github and follow the next steps before using:
+
+1. Use the correct nvm version
+```bash
+nvm use
+```
+2. Copy the .env.example
+```bash
+cp .env.example .env
+```
+3. IMPORTANT: Edit the .env and change the default values.
 
 ## Installation
 
