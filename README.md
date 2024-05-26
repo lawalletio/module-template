@@ -12,7 +12,8 @@ nvm use
 ```bash
 cp .env.example .env
 ```
-3. IMPORTANT: Edit the .env and change the default values.
+3. [Generate](https://nostrdebug.lacrypta.ar/publish) a nostr key pair and put
+   it in the variables `NOSTR_PRIVATE_KEY` and `NOSTR_PUBLIC_KEY`
 
 ## Installation
 
